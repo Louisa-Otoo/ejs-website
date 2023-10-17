@@ -1,0 +1,35 @@
+
+.staff-content {
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, white, rgb(100, 121, 63));
+    border-radius: 1rem;
+}
+
+.staff-title {
+    font-size: 3rem;
+    color: darkolivegreen;
+}
+
+.staff-content ul {
+    list-style: none;
+}
+
+.member-details{
+    display: flex;
+}
+
+.member-image {
+    height: 15rem;
+    width: 13rem;
+    margin: 2rem 1rem;
+    border-radius: 50%;
+}
+
+.member-rank {
+    font-size: 1.3rem;
+    color: rgb(61, 65, 53);
+    margin: 0.8rem;
+    padding: 1rem;
+}

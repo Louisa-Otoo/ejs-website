@@ -1,0 +1,21 @@
+
+.about-content {
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, white, darkolivegreen);
+    border-radius: 1rem;
+}
+
+.abtTitle {
+    font-size: 3rem;
+    color: rgb(62, 75, 40);
+    padding: 2rem;
+}
+
+.abt-sum {
+    font-size: 1.5rem;
+    color: rgb(61, 65, 53);
+    margin: 0.8rem;
+    padding: 0 2rem;
+}

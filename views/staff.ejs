@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuisine Cafe || Our Staff</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/staff.css"> 
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <div class="page-container">
+        <div class="sidebar">
+            <%- include('partials/sidebar.ejs') %>
+        </div>
+
+        <div class="staff-content">
+            <h1 class="staff-title"><%= pageTitle %></h1>
+            <ul class="member-details">
+                <% staffMembers.forEach(function(member) { %>
+                    <li>
+                        <img class="member-image" src="<%= member.imageUrl %> " alt="<%= member.name %>">                       
+                        <span class="member-rank"><%= member.name %> - <%= member.position %></span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div> 
+    </div>
+</body>
+</html>

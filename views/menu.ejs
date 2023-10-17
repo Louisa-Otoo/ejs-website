@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuisine Cafe || Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="sidebar">
+            <%- include('partials/sidebar.ejs') %>
+        </div>
+
+        <div id="menu-container">
+            <div class="menu-column">
+                <h1 class="menu-title"><%= pageTitle %></h1>
+                <ul class="menu-list">
+                    <% menuItems.forEach(function(item) { %>
+                        <li class="menu-item">
+                            <span class="food-name"><%= item.name %></span>
+                            <span class="food-price"><%= item.price %></span>
+                        </li>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="cart-column">
+                <h2 class="cart-title">Cart</h2>
+                <div class="cart-content">
+                <!-- Cart here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
